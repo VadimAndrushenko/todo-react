@@ -1,12 +1,49 @@
-# React + Vite
+# Todo List — React (FSD) + json-server / localStorage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Todo-list приложение на **React**, реализованное с использованием **FSD (Feature-Sliced Design)**, собственной логикой роутинга, работой с сервером через `json-server` в режиме разработки и `localStorage` в продакшене.  
+Проект включает кастомные анимации и задеплоен на GitHub Pages.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+👉 https://vadimandrushenko.github.io/todo-react/  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Возможности
+- CRUD операции с задачами (создание, редактирование, удаление, выполнение)
+- Архитектура FSD
+- Собственный hash-роутинг (подходит для GitHub Pages)
+- Работа с API через `json-server` (dev)
+- Хранение данных в `localStorage` (production)
+- Кастомные анимации элементов списка
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  
+---
+
+## ⚙️ Установка и запуск
+
+### 1. Клонирование репозитория
+```bash
+git clone https://github.com/VadimAndrushenko/todo-react.git  
+cd todo-react
+```
+
+### 2. Установка зависимостей
+```bash
+npm install
+```
+
+### 3. Запуск в режиме разработки
+Откройте два терминала (или запустите параллельно):
+
+Запускаем json-server (mock API):
+```bash
+npm run sever
+```
+
+Запускаем frontend (dev сервер):
+
+```bash
+npm run dev
+```
+
+переходите по сылке http://localhost:5173/
